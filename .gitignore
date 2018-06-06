@@ -1,6 +1,7 @@
-# Skip data to reduce storage requirements
+# Skip data and videos to reduce storage requirements
 data/
 data.zip
+*.mp4
 
 # Skip examples
 examples/
