@@ -68,7 +68,7 @@ def dataGenerator(samples, batch_size=64):
 
 def train(train_generator, valid_generator, num_train, num_valid):
 	"""
-	Trains the model using the data generators. The model is built with keras
+	Trains the model using the data generators. The model is built with Keras
 	using a modified LeNet architecture based on the network used for the
 	traffic sign classifier project.
 	"""
@@ -80,9 +80,9 @@ def train(train_generator, valid_generator, num_train, num_valid):
 
 	# convolutional layers
 	model.add(Convolution2D(8, 1, 1, activation='relu'))
-	model.add(Convolution2D(5, 5, 16, activation='relu'))
+	model.add(Convolution2D(16, 5, 5, activation='relu'))
 	model.add(MaxPooling2D(border_mode='same'))
-	model.add(Convolution2D(5, 5, 32, activation='relu'))
+	model.add(Convolution2D(32, 5, 5, activation='relu'))
 	model.add(MaxPooling2D(border_mode='same'))
 
 	# fully connected layers
@@ -97,7 +97,7 @@ def train(train_generator, valid_generator, num_train, num_valid):
 						samples_per_epoch=num_train,
 						validation_data=valid_generator,
 						nb_val_samples=num_valid,
-						nb_epoch=7)
+						nb_epoch=3)
 
 	model.save('model.h5')
 
