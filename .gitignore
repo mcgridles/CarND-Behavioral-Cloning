@@ -1,0 +1,9 @@
+# Skip data to reduce storage requirements
+data/
+data.zip
+
+# Skip examples
+examples/
+
+# Ignore macOS file system items
+.DS_Store
