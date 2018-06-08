@@ -1,10 +1,9 @@
 # Skip data and videos to reduce storage requirements
 data/
 data.zip
-*.mp4
 
-# Skip examples
-examples/
+# Skip extra vids
+extra_videos/
 
 # Ignore macOS file system items
 .DS_Store

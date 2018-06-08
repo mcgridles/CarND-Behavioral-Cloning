@@ -124,18 +124,18 @@ My approach to training data was to do two laps around the track one direction, 
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![alt text][image2]
+![alt text][examples/center_driving.jpg]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to steer back to the center of the lane if it ever starts to drift towards the sides. These images show what a recovery looks:
 
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
+![alt text][examples/recovery1.jpg]
+![alt text][examples/recovery2.jpg]
+![alt text][examples/recovery3.jpg]
 
 To augment the data sat, I also flipped images and angles thinking that this would make sure the car does not pull more to one side. For example, here is an image that has then been flipped:
 
-![alt text][image6]
-![alt text][image7]
+![alt text][examples/center_driving.jpg]
+![alt text][examples/center_driving_flipped.jpg]
 
 After the collection process, I had roughly 3700 data points. I then preprocessed this data by cropping the images from 320x160x3 to 235x160x3 and normalizing the data with 0 mean.
 
