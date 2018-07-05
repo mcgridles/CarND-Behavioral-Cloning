@@ -2,8 +2,9 @@
 data/
 data.zip
 
-# Skip extra vids
+# Project files
 extra_videos/
+examples/
 
-# Ignore macOS file system items
+# macOS files
 .DS_Store
