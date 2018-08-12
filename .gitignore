@@ -5,6 +5,7 @@ data.zip
 # Project files
 extra_videos/
 examples/
+.idea/
 
 # macOS files
 .DS_Store

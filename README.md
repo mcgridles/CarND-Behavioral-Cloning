@@ -4,7 +4,11 @@
 
 Overview
 ---
-The goal of this project is to use deep neural networks and convolutional neural networks to clone driving behavior. The model was trained, validated and tested using Keras, and will output a steering angle to an autonomous vehicle. Check out [my writeup](writeup.md) to learn more about my process and see how it works.
+The goal of this project is to use deep neural networks and convolutional neural networks to clone driving behavior. The model was trained, validated and tested using Keras, and will output a steering angle to an autonomous vehicle. 
+
+The network architecture used is very similar to the LeNet architecture, and uses several convolutional layers with max pooling followed by fully connected layers that perform the classification.
+
+Check out [my writeup](writeup.md) to learn more about my process and how it works.
 
 Dependencies
 ---
